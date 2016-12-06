@@ -14,7 +14,7 @@ defmodule MicroStatus do
   end
 
   def fetch_version(:prod) do
-    path = Application.get_env(:status, :app_name)
+    path = Application.get_env(:micro_status, :app_name)
     |> :code.priv_dir
     |> Path.join("VERSION")
     case(File.read(path)) do
