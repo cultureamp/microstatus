@@ -1,4 +1,4 @@
-defmodule Status do
+defmodule MicroStatus do
   @moduledoc """
   A server that returns the status of the application
   """

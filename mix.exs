@@ -1,8 +1,8 @@
-defmodule Status.Mixfile do
+defmodule MicroStatus.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :status,
+    [app: :micro_status,
      version: "0.1.0",
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
