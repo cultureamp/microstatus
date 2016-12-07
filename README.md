@@ -59,6 +59,8 @@ Define a route (`web/router.ex` if Phoenix, or wherever routes are defined):
 
 ```elixir
 get "/status", StatusController, :index
+```
+
 
 Boot your app, and see if a request to `/status` works. It should return something like:
 
