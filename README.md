@@ -34,7 +34,7 @@ def start(_type, _args) do
   children = [
     supervisor(YourApp.Repo, []),
     supervisor(YourApp.Endpoint, []),
-    worker(MicroStatus, []), # THIS LINE!!
+    worker(MicroStatus, [YourApp.Status]), # THIS LINE!!
   ]
   ...
 ```
