@@ -27,8 +27,8 @@ defmodule MicroStatus do
     fetch_version(:dev)
   end
 
-  def version do
-    GenServer.call(__MODULE__, :version)
+  def version(name) do
+    GenServer.call(name, :version)
   end
 
   defp local_git_revision do

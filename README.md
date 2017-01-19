@@ -46,7 +46,7 @@ defmodule Waffle.StatusController do
   use YourApp.Web, :controller
 
   def index(conn, _params) do
-    status = MicroStatus.version
+    status = MicroStatus.version(YourApp.Status)
 
     conn
     |> put_resp_content_type("application/json")
