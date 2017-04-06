@@ -10,7 +10,7 @@ defmodule MicroStatus do
   end
 
   def fetch_version(:dev) do
-    ~s({ "commit_sha": "#{local_git_revision}", "version": null })
+    ~s({ "commit_sha": "#{local_git_revision()}", "version": null })
   end
 
   def fetch_version(:prod) do
