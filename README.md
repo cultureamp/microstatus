@@ -42,7 +42,7 @@ def start(_type, _args) do
 Define a controller:
 
 ```
-defmodule Waffle.StatusController do
+defmodule YourApp.StatusController do
   use YourApp.Web, :controller
 
   def index(conn, _params) do
