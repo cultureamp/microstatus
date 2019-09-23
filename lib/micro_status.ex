@@ -37,7 +37,7 @@ defmodule MicroStatus do
 
   defp local_git_revision do
     {rev, _exit_status} = System.cmd("git", ["rev-parse", "HEAD"])
-    rev |> String.strip
+    rev |> String.trim
   end
 
   def handle_call(:version, _, status_json) do
