@@ -5,6 +5,10 @@ defmodule MicroStatus do
 
   use GenServer
 
+  def init(init_arg) do
+    {:ok, init_arg}
+  end
+
   def start_link(name) do
     GenServer.start_link(__MODULE__, fetch_version(Mix.env), name: name)
   end
